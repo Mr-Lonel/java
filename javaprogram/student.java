@@ -1,32 +1,41 @@
-package test;
+package training;
 
 import java.util.Scanner;
+class Detial
+{
+	Scanner sc=new Scanner(System.in);
+	String name;
+	int rollno;
+	String s2="k.s.r college of engineering";
+	char sec;
+	void insert()
+	{
+		System.out.println("enter the name");
+//		name=n;
+		name=sc.next();
+		System.out.println("enter the rollno");
+//		rollno=r;
+		rollno=sc.nextInt();
+		System.out.println("enter the section");
+//		sec=s;
+		sec=sc.next().charAt(0);
+	}
+	void display()
+	{
+		
+		System.out.println(name+" "+rollno+" "+sec);
+	}
+
+}
 
 public class student {
-//	int a;
-//	int b;
-
-	public int sum(int x,int y)
-	{
-//		a=x;
-//		b=y;
-//		int c=a+b;
-		
-		int c=x+y;
-		System.out.println(c);
-		return c;
-	}
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner scan=new Scanner(System.in);
-		int a,b;
-		a=scan.nextInt();
-		b=scan.nextInt();
-		student s=new student();
-		s.sum(a,b);
+		Detial d=new Detial();
+		d.insert();
+		d.display();
 		
-		
-
 	}
 
 }
